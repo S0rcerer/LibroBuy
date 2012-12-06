@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookSearchTerminal", "BookSearchTerminal\BookSearchTerminal.csproj", "{14CA8ED1-9E5E-4BB4-89F2-6B4F5276C97B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicBookClass", "..\BasicBookClass\BasicBookClass\BasicBookClass.csproj", "{8365E8B2-BC55-4754-8C16-8CE62E907FF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14CA8ED1-9E5E-4BB4-89F2-6B4F5276C97B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CA8ED1-9E5E-4BB4-89F2-6B4F5276C97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CA8ED1-9E5E-4BB4-89F2-6B4F5276C97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CA8ED1-9E5E-4BB4-89F2-6B4F5276C97B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8365E8B2-BC55-4754-8C16-8CE62E907FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8365E8B2-BC55-4754-8C16-8CE62E907FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8365E8B2-BC55-4754-8C16-8CE62E907FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8365E8B2-BC55-4754-8C16-8CE62E907FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

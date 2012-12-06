@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryManager", "QueryManager\QueryManager.csproj", "{301627C8-7BF0-477E-AD01-1363339E49D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicBookClass", "..\BasicBookClass\BasicBookClass\BasicBookClass.csproj", "{8365E8B2-BC55-4754-8C16-8CE62E907FF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookDateBase", "..\BookDateBase\BookDateBase\BookDateBase.csproj", "{5ECA2292-924A-4DEA-847D-A97B55BC8E46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{301627C8-7BF0-477E-AD01-1363339E49D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301627C8-7BF0-477E-AD01-1363339E49D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301627C8-7BF0-477E-AD01-1363339E49D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301627C8-7BF0-477E-AD01-1363339E49D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8365E8B2-BC55-4754-8C16-8CE62E907FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8365E8B2-BC55-4754-8C16-8CE62E907FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8365E8B2-BC55-4754-8C16-8CE62E907FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8365E8B2-BC55-4754-8C16-8CE62E907FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ECA2292-924A-4DEA-847D-A97B55BC8E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ECA2292-924A-4DEA-847D-A97B55BC8E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ECA2292-924A-4DEA-847D-A97B55BC8E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ECA2292-924A-4DEA-847D-A97B55BC8E46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
