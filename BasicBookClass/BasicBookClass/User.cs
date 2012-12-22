@@ -3,9 +3,9 @@
 namespace BasicClass
 {
     [Serializable]
-    class User
+    public class User
     {
-        String login;        
+        public String login;        
         String password;
         String address;
         String firstName;
@@ -15,11 +15,13 @@ namespace BasicClass
         int booksOfAllTime;
         int costOfAllTime;
 
-        Book[][] history;
+        public Book[][] history;
 
-        User(String login, String password, String Address, String FirstName, String LastName)
+        public User(String login, String password, String Address, String FirstName, String LastName)
         {
             //Реазилазция от Артема
+            this.login = login; //
+
         }
     }
 }

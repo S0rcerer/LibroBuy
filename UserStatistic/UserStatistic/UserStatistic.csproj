@@ -55,6 +55,12 @@
       <DependentUpon>UserStatistic.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BasicBookClass\BasicBookClass\BasicClass.csproj">
+      <Project>{8365E8B2-BC55-4754-8C16-8CE62E907FF1}</Project>
+      <Name>BasicClass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
