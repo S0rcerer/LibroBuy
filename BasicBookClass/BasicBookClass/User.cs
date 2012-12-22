@@ -7,13 +7,13 @@ namespace BasicClass
     {
         public String login;        
         String password;
-        String address;
-        String firstName;
-        String lastName;
-        float aveBooksAtOnce;
-        float aveCostAtOnce;
-        int booksOfAllTime;
-        int costOfAllTime;
+        public String address;
+        public String firstName;
+        public String lastName;
+        public float aveBooksAtOnce;
+        public float aveCostAtOnce;
+        public int booksOfAllTime;
+        public int costOfAllTime;
 
         public Book[][] history;
 
@@ -21,7 +21,9 @@ namespace BasicClass
         {
             //Реазилазция от Артема
             this.login = login; //
-
+            this.address = Address;
+            this.firstName = FirstName;
+            this.lastName = LastName;
         }
     }
 }
