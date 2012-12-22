@@ -210,7 +210,7 @@
               <end-role id="" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
-          <item id="ddip186987482976490055_867554201869054849" cid="C001" type="class" name="User" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:26:32">
+          <item id="ddip186987482976490055_867554201869054849" cid="C001" type="class" name="User" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:26:32">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />
@@ -229,7 +229,7 @@
               <attribute id="afd62b1cc02d04e0db1aae0b2fea1e3aa915" name="Фамилия" type="" type-id="" visibility="private" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
-              <attribute id="aef67bea7ed8e4b24b09ff3bd16812afa442" name="Адресс" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="a43f717f4775a41878bf550b39b6ea4de736" name="Адрес" type="" type-id="" visibility="private" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
               <attribute id="acbf202154aee4064bc5d59121ff3ae7b632" name="Статистика" type="" type-id="" visibility="private" abstract="false" virtual="false">
@@ -241,7 +241,7 @@
               <source-codes />
             </template-parameters>
           </item>
-          <item id="ddip186987482976490055_806335600685882809" cid="C002" type="class" name="UserManager" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:29:57">
+          <item id="ddip186987482976490055_806335600685882809" cid="C002" type="class" name="UserManager" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:29:57">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />
@@ -269,7 +269,7 @@
               <source-codes />
             </template-parameters>
           </item>
-          <item id="ddip186987482976490055_808171039382196065" cid="REL003" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:32:36">
+          <item id="ddip186987482976490055_808171039382196065" cid="REL003" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:32:36">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />
@@ -528,7 +528,7 @@
               <end-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
-          <item id="ddip526140921876088450_405955245617833867" cid="REL002" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:26:12">
+          <item id="ddip526140921876088450_405955245617833867" cid="REL002" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:26:12">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />
@@ -539,7 +539,7 @@
               <end-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
-          <item id="ddip526140921876088450_949566179871477559" cid="REL001" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:26:02">
+          <item id="ddip526140921876088450_949566179871477559" cid="REL001" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:26:02">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />
@@ -582,7 +582,7 @@
             <owned-items />
             <style class="default" />
           </item>
-          <item id="ddip526140921876088450_263758047271139949" cid="AC001" type="actor" name="Админестратор" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:24:53">
+          <item id="ddip526140921876088450_263758047271139949" cid="AC001" type="actor" name="Админестратор" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/13/2012 13:24:53">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />

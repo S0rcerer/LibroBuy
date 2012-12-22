@@ -11,6 +11,7 @@ namespace BasicClass
         public int pages;           //Число страниц        
         public decimal price;       //Цена
         public string[] tags;       //Теги
+        public DateTime time;
         /*
             Так как BookShopInfo класс, то он хранится указателем тем самым можно не хранить
             Избыточную информацию
