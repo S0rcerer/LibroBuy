@@ -3,23 +3,27 @@
 namespace BasicClass
 {
     [Serializable]
-    class User
+    public class User
     {
-        String login;        
+        public String login;        
         String password;
-        String address;
-        String firstName;
-        String lastName;
-        float aveBooksAtOnce;
-        float aveCostAtOnce;
-        int booksOfAllTime;
-        int costOfAllTime;
+        public String address;
+        public String firstName;
+        public String lastName;
+        public float aveBooksAtOnce;
+        public float aveCostAtOnce;
+        public int booksOfAllTime;
+        public int costOfAllTime;
 
-        Book[][] history;
+        public Book[][] history;
 
-        User(String login, String password, String Address, String FirstName, String LastName)
+        public User(String login, String password, String Address, String FirstName, String LastName)
         {
             //Реазилазция от Артема
+            this.login = login; //
+            this.address = Address;
+            this.firstName = FirstName;
+            this.lastName = LastName;
         }
     }
 }
