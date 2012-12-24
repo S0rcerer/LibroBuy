@@ -23,8 +23,6 @@ namespace UserStatistic
 
             OutputUserProfile();
             OutputHistory();
-
-
         }
 
         private void OutputUserProfile()
@@ -38,6 +36,8 @@ namespace UserStatistic
         {
             decimal price = 0;
             int totalBooks = 0;
+
+            if (statisticOwner.history == null) return;
 
             foreach (Book[] books in statisticOwner.history)
             {

@@ -1,0 +1,176 @@
+Описание классов и структур:
+
+Базовые классы и структуры:
+
+..................................
+public struct Book
+- Реализация книги
+
+Поля:
+
+public string title;        
+- Название книги
+public string author;       
+- Автор книги
+public int copies;          
+- Число копий книги
+public int pages;           
+- Колличество страниц в книге
+public decimal price;       
+- Цена книги
+public string[] tags;       
+- Теги
+public DateTime time;
+- Время доставки
+public BookShopInfo from;
+- Информация о книгохранилищи в котором находится данная книга
+
+Методы рассширения:
+
+bool likeMask(Book mask)
+- из класса QueryManager.BookExtension
+- Проверяет подходит ли данная книга условиям поиска.
+
+Тип структуры был выбран в целях оптимизации обращений и удобства копирования при присвоении - то есть основных операций для данного типа.
+
+..................................
+public class BookBase
+- Реализация книгохранилища
+
+Поля:
+
+public Books books;
+- Массив книг
+
+string path;
+- Место хранения на диске
+
+SoapFormatter deser = new SoapFormatter();
+- сериализатор - для сохранения данных
+(класс пространства имен System.Runtime.Serialization.Formatters.Soap)
+
+Методы:
+
+public BookBase(Book[] bs, String p)
+- Конструктор, создает на диске в файле p книгохранилище с книгами из bs. В случае неудачи выбрасывает исключение ArgumentException
+
+public BookBase(string p)
+- Конструктор, загружает ранеесохраненное книгохранилище с диска из файла p. В случае неудачи выбрасывает исключение ArgumentException
+
+public bool Load()
+- Перезагружает базу данных с диска, возвращает false если попытка неудачна
+
+public bool Save()
+- Сохраняет базу данных на диск, возвращает false если попытка неудачна
+
+
+public class User
+- реализует покупателя
+
+Поля:
+
+public String login;
+- логин пользователя
+public String password;
+- пароль пользователя
+public String address;
+- адресс пользователя
+public String firstName;
+- Имя пользователя
+public String lastName;
+-Фамилия пользователя
+public float aveBooksAtOnce;
+- В среднем книг за один заказ
+public float aveCostAtOnce;
+- Стредняя стоимость заказа
+public int booksOfAllTime;
+- Всего заказанно книг
+public int costOfAllTime;
+- Всего потрачено:)
+
+public Book[][] history;
+- История покупок.
+
+Методы:
+
+public User(String login, String password, String Address, String FirstName, String LastName)
+- Удобный конструктор
+
+Дополнительные классы:
+..................................
+public class BookShopInfo
+
+- Информация о книгохранилище в котором находится книга
+
+Поля:
+
+public String name;
+- Название магазина
+
+public String address;
+-Адресс магазина
+
+..................................
+
+public class Manager
+
+-Менеджер запросов к книгохранилещам
+
+Поля:
+
+BookBase[] AllBase;
+- все книгохранилища
+
+public event EventHandler<QueryEventArgs> Query;
+
+- события на которые подписываются все, кто хотят узнать результат поискового запроса. В данном случае это один компонент ListView.ListView
+
+Методы:
+
+public Manager(String path)
+
+- конструктор принимающий путь к папке в которой лежат книгохранилища.
+
+public void OnQuery(Book mask)
+
+- Запрос, в результате которого вызывается событие Query.
+
+//Вторая итерация
+public bool Buy(User user, int[] ids, int[] copies)
+
+- Заказ книг данным пользователем, с данными id, и числом копий.
+
+..................................
+public class QueryEventArgs: EventArgs
+- описывает аргумент события Query из класса QueryManager.Manager
+
+Поля:
+
+readonly public Book[] Answer;
+- результат поиска
+readonly public int[] Indexes;
+- глобальные индексы книг
+
+Методы:
+
+public QueryEventArgs(Book[] ans, int[] ids)
+- конструктор
+
+..................................
+public class UserManager
+
+Поля:
+
+public Dictionary<string, User> users;
+- Словарь пользователей по логинам
+
+Методы:
+
+public UserManager()
+- конструктор
+
+public User Register(string login, string password, string name, string familyName, string address)
+- регистрация нового пользователя с данны логином, паролем, именем, фамилией и адрессом. Возвращает null если пользователь с таким логином уже есть.
+
+public User Authentification(string login, string password)
+- запрос на аутентификацию пользователя по логину и паролю. Если запрос неудачный возвращается null.

@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.queryBookList = new System.Windows.Forms.ListView();
-            this.buyBookButton = new System.Windows.Forms.Button();
-            this.returnBookButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BuyButton = new System.Windows.Forms.Button();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buyBookButton = new System.Windows.Forms.Button();
+            this.returnBookButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BuyButton = new System.Windows.Forms.Button();
             this.purchaseBookList = new System.Windows.Forms.ListView();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -49,8 +49,8 @@
             // 
             // queryBookList
             // 
-            this.queryBookList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.queryBookList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.queryBookList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -59,72 +59,14 @@
             this.columnHeader5});
             this.queryBookList.FullRowSelect = true;
             this.queryBookList.GridLines = true;
-            this.queryBookList.Location = new System.Drawing.Point(3, 32);
+            this.queryBookList.Location = new System.Drawing.Point(4, 39);
+            this.queryBookList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.queryBookList.MultiSelect = false;
             this.queryBookList.Name = "queryBookList";
-            this.queryBookList.Size = new System.Drawing.Size(421, 384);
+            this.queryBookList.Size = new System.Drawing.Size(560, 472);
             this.queryBookList.TabIndex = 0;
             this.queryBookList.UseCompatibleStateImageBehavior = false;
             this.queryBookList.View = System.Windows.Forms.View.Details;
-            // 
-            // buyBookButton
-            // 
-            this.buyBookButton.Location = new System.Drawing.Point(430, 32);
-            this.buyBookButton.Name = "buyBookButton";
-            this.buyBookButton.Size = new System.Drawing.Size(41, 23);
-            this.buyBookButton.TabIndex = 2;
-            this.buyBookButton.Text = "->";
-            this.buyBookButton.UseVisualStyleBackColor = true;
-            this.buyBookButton.Click += new System.EventHandler(this.buyBookButton_Click);
-            // 
-            // returnBookButton
-            // 
-            this.returnBookButton.Location = new System.Drawing.Point(430, 61);
-            this.returnBookButton.Name = "returnBookButton";
-            this.returnBookButton.Size = new System.Drawing.Size(41, 23);
-            this.returnBookButton.TabIndex = 3;
-            this.returnBookButton.Text = "<-";
-            this.returnBookButton.UseVisualStyleBackColor = true;
-            this.returnBookButton.Click += new System.EventHandler(this.returnBookButton_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label2.Location = new System.Drawing.Point(653, 13);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Корзина";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label1.Location = new System.Drawing.Point(159, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Результат поиска";
-            // 
-            // BuyButton
-            // 
-            this.BuyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuyButton.Location = new System.Drawing.Point(827, 388);
-            this.BuyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BuyButton.Name = "BuyButton";
-            this.BuyButton.Size = new System.Drawing.Size(71, 28);
-            this.BuyButton.TabIndex = 6;
-            this.BuyButton.Text = "Заказать";
-            this.BuyButton.UseVisualStyleBackColor = true;
             // 
             // columnHeader1
             // 
@@ -150,10 +92,70 @@
             this.columnHeader5.Text = "Количество";
             this.columnHeader5.Width = 71;
             // 
+            // buyBookButton
+            // 
+            this.buyBookButton.Location = new System.Drawing.Point(573, 39);
+            this.buyBookButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buyBookButton.Name = "buyBookButton";
+            this.buyBookButton.Size = new System.Drawing.Size(55, 28);
+            this.buyBookButton.TabIndex = 2;
+            this.buyBookButton.Text = "->";
+            this.buyBookButton.UseVisualStyleBackColor = true;
+            this.buyBookButton.Click += new System.EventHandler(this.buyBookButton_Click);
+            // 
+            // returnBookButton
+            // 
+            this.returnBookButton.Location = new System.Drawing.Point(573, 75);
+            this.returnBookButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.returnBookButton.Name = "returnBookButton";
+            this.returnBookButton.Size = new System.Drawing.Size(55, 28);
+            this.returnBookButton.TabIndex = 3;
+            this.returnBookButton.Text = "<-";
+            this.returnBookButton.UseVisualStyleBackColor = true;
+            this.returnBookButton.Click += new System.EventHandler(this.returnBookButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label2.Location = new System.Drawing.Point(871, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Корзина";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label1.Location = new System.Drawing.Point(212, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Результат поиска";
+            // 
+            // BuyButton
+            // 
+            this.BuyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuyButton.Location = new System.Drawing.Point(1103, 478);
+            this.BuyButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BuyButton.Name = "BuyButton";
+            this.BuyButton.Size = new System.Drawing.Size(95, 34);
+            this.BuyButton.TabIndex = 6;
+            this.BuyButton.Text = "Заказать";
+            this.BuyButton.UseVisualStyleBackColor = true;
+            this.BuyButton.Click += new System.EventHandler(this.BuyButton_Click);
+            // 
             // purchaseBookList
             // 
-            this.purchaseBookList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.purchaseBookList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.purchaseBookList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader6,
             this.columnHeader7,
@@ -162,10 +164,11 @@
             this.columnHeader10});
             this.purchaseBookList.FullRowSelect = true;
             this.purchaseBookList.GridLines = true;
-            this.purchaseBookList.Location = new System.Drawing.Point(477, 32);
+            this.purchaseBookList.Location = new System.Drawing.Point(636, 39);
+            this.purchaseBookList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.purchaseBookList.MultiSelect = false;
             this.purchaseBookList.Name = "purchaseBookList";
-            this.purchaseBookList.Size = new System.Drawing.Size(421, 351);
+            this.purchaseBookList.Size = new System.Drawing.Size(560, 431);
             this.purchaseBookList.TabIndex = 7;
             this.purchaseBookList.UseCompatibleStateImageBehavior = false;
             this.purchaseBookList.View = System.Windows.Forms.View.Details;
@@ -196,7 +199,7 @@
             // 
             // ListView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.purchaseBookList);
             this.Controls.Add(this.BuyButton);
@@ -205,8 +208,9 @@
             this.Controls.Add(this.returnBookButton);
             this.Controls.Add(this.buyBookButton);
             this.Controls.Add(this.queryBookList);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListView";
-            this.Size = new System.Drawing.Size(907, 428);
+            this.Size = new System.Drawing.Size(1209, 527);
             this.Resize += new System.EventHandler(this.ListView_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();

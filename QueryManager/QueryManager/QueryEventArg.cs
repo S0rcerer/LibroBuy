@@ -8,20 +8,17 @@ namespace QueryManager
     /// </summary>
     public class QueryEventArgs: EventArgs
     {
-        private Book[] answer;
-        
+        readonly public Book[] Answer;
+
+        readonly public int[] Indexes;
         /// <summary>
         /// Конструктор события ответа на запрос
         /// </summary>
         /// <param name="ans">Потоко небезопасная передача ответа на запрос</param>
-        public QueryEventArgs(Book[] ans)
+        public QueryEventArgs(Book[] ans, int[] ids)
         {
-            answer = ans;
-        }
-
-        public Book[] Answer
-        {
-            get { return answer; }
+            Answer = ans;
+            Indexes = ids;
         }
     }
 }

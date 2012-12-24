@@ -2,8 +2,11 @@
 
 namespace BasicClass
 {
+    /// <summary>
+    /// Чисто побочный класс
+    /// </summary>
     [Serializable]
-    public struct Books
+    struct Books
     {
         public Book[] books;
     }

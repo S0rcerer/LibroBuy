@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2CED4A01-2EEE-48B2-B702-0A0AAF4429A6}</ProjectGuid>
+    <ProjectGuid>{DBFDF145-C1F4-46ED-AAC8-A8005E9247F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Security</RootNamespace>
-    <AssemblyName>Security</AssemblyName>
+    <RootNamespace>UserManagerLibrary</RootNamespace>
+    <AssemblyName>UserManagerLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IUserAccessManager.cs" />
+    <Compile Include="UserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BasicBookClass\BasicBookClass\BasicClass.csproj">
+      <Project>{8365E8B2-BC55-4754-8C16-8CE62E907FF1}</Project>
+      <Name>BasicClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -13,6 +13,9 @@ namespace ListView
 {
     public partial class ListView : UserControl
     {
+        
+        public Func<User, int[], int[], bool> BuyLambda;
+
         public ListView()
         {
             InitializeComponent();         
@@ -137,6 +140,11 @@ namespace ListView
                 
                 queryBookList.Items.Add(newBook);
             }
+        }
+
+        private void BuyButton_Click(object sender, EventArgs e)
+        {
+            //BuyLambda()
         }
 
 

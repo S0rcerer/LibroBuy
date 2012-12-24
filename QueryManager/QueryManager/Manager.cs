@@ -6,7 +6,7 @@ using BasicClass;
 
 namespace QueryManager
 {
-    public class Manager: IQueryManager
+    public class Manager
     {
         BookBase[] AllBase;
         public event EventHandler<QueryEventArgs> Query;       
@@ -26,6 +26,8 @@ namespace QueryManager
         {
             if (AllBase==null) return;
             List<Book> Result = new List<Book>();
+            List<int> Indexes = new List<int>();
+            /*
             foreach (BookBase bb in AllBase)
             {
                 Result.AddRange(
@@ -34,9 +36,69 @@ namespace QueryManager
                     select b
                     );
             }
+             */
+            int ids = 0;
+            for (int i = 0; i < AllBase.Length; i++)
+            {
+                for (int j = 0; j < AllBase[i].books.Length; j++)
+                {
+                    ids++;
+                    if (AllBase[i].books[j].likeMask(mask))
+                    {
+                        Result.Add(AllBase[i].books[j]);
+                        Indexes.Add(ids);
+                    }
+                }
+            }
 
-            Query(this, new QueryEventArgs(Result.ToArray()));
+            Query(this, new QueryEventArgs(Result.ToArray(), Indexes.ToArray()));
         }
- 
+
+        public bool Buy(User user, int[] ids, int[] copies)
+        {
+            try
+            {
+                for (int i = 0; i < ids.Length; i++)
+                {
+                    int j = 0;
+                    while (ids[i] > AllBase[j].books.Length)
+                    {
+                        ids[i] -= AllBase[j].books.Length;
+                        j++;
+                    }
+
+                    if (AllBase[j].books[ids[i]].copies < copies[i])
+                        return false;
+                }
+
+                List<Book> bs = new List<Book>();
+                List<Book[]> history = new List<Book[]>(user.history);
+
+                for (int i = 0; i < ids.Length; i++)
+                {
+                    
+                    int j = 0;
+                    while (ids[i] > AllBase[j].books.Length)
+                    {
+                        ids[i] -= AllBase[j].books.Length;
+                        j++;
+                    }
+
+                    bs.Add(AllBase[j].books[ids[i]]);
+                    Book b = bs.Last();
+                    b.copies = copies[i];
+                    b.time = DateTime.Today;
+                    AllBase[j].books[ids[i]].copies -= copies[i];
+                    history.Add(bs.ToArray());
+                }
+                    
+                return true;
+            }
+
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

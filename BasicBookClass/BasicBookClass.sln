@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicBookClass", "BasicBookClass\BasicBookClass.csproj", "{8365E8B2-BC55-4754-8C16-8CE62E907FF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicBookClass", "BasicBookClass\BasicClass.csproj", "{8365E8B2-BC55-4754-8C16-8CE62E907FF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
