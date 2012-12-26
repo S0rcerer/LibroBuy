@@ -50,8 +50,8 @@ namespace UserStatistic
                 }
             }
 
-            float aveBooksAtOnce = totalBooks / statisticOwner.history.Length;
-            float aveCostAtOnce = (float)price / statisticOwner.history.Length;
+            float aveBooksAtOnce = totalBooks / statisticOwner.history.Count;
+            float aveCostAtOnce = (float)price / statisticOwner.history.Count;
 
             label4.Text += aveBooksAtOnce.ToString();
             label5.Text += aveCostAtOnce.ToString() + "$";

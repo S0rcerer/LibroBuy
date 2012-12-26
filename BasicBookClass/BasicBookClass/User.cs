@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BasicClass
 {
@@ -15,7 +16,7 @@ namespace BasicClass
         public int booksOfAllTime;
         public int costOfAllTime;
 
-        public Book[][] history;
+        public List<Book[]> history;
 
         public User(String login, String password, String Address, String FirstName, String LastName)
         {
@@ -24,6 +25,11 @@ namespace BasicClass
             this.address = Address;
             this.firstName = FirstName;
             this.lastName = LastName;
+        }
+
+        public void AddHistory(Book[] newBooks)
+        {
+            history.Add(newBooks);
         }
     }
 }

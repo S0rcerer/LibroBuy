@@ -72,7 +72,6 @@ namespace QueryManager
                 }
 
                 List<Book> bs = new List<Book>();
-                List<Book[]> history = new List<Book[]>(user.history);
 
                 for (int i = 0; i < ids.Length; i++)
                 {
@@ -89,7 +88,7 @@ namespace QueryManager
                     b.copies = copies[i];
                     b.time = DateTime.Today;
                     AllBase[j].books[ids[i]].copies -= copies[i];
-                    history.Add(bs.ToArray());
+                    user.AddHistory(bs.ToArray());
                 }
                     
                 return true;
