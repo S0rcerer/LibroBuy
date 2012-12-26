@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sim-project version="5.96" multi-file="no">
+<sim-project version="5.95" multi-file="no">
   <meta>
     <name>Project</name>
     <authors> </authors>
@@ -38,19 +38,19 @@
       <owned-items />
       <style class="default" />
       <attributes>
-        <attribute id="a5dbb8e5ad88542d49746e6a6a0a2f439227" name="title" type="" type-id="" visibility="private" abstract="false" virtual="false">
+        <attribute id="a5dbb8e5ad88542d49746e6a6a0a2f439227" name="title" type="" type-id="" visibility="public" abstract="false" virtual="false">
           <stereotypes />
         </attribute>
-        <attribute id="a6174e0a604994729bcf043f22c5dc4c4395" name="author" type="" type-id="" visibility="private" abstract="false" virtual="false">
+        <attribute id="a6174e0a604994729bcf043f22c5dc4c4395" name="author" type="" type-id="" visibility="public" abstract="false" virtual="false">
           <stereotypes />
         </attribute>
-        <attribute id="a1e086683ed6f43faa917d1722d265054306" name="copies" type="" type-id="" visibility="private" abstract="false" virtual="false">
+        <attribute id="a1e086683ed6f43faa917d1722d265054306" name="copies" type="" type-id="" visibility="public" abstract="false" virtual="false">
           <stereotypes />
         </attribute>
-        <attribute id="ab33815258de04dafb0e2804abc25b62a629" name="pages" type="" type-id="" visibility="private" abstract="false" virtual="false">
+        <attribute id="ab33815258de04dafb0e2804abc25b62a629" name="pages" type="" type-id="" visibility="public" abstract="false" virtual="false">
           <stereotypes />
         </attribute>
-        <attribute id="a9256359e70844f18b285571af1fa3679367" name="price" type="" type-id="" visibility="private" abstract="false" virtual="false">
+        <attribute id="a9256359e70844f18b285571af1fa3679367" name="price" type="" type-id="" visibility="public" abstract="false" virtual="false">
           <stereotypes />
         </attribute>
       </attributes>
@@ -95,7 +95,7 @@
           </authors>
           <description />
           <creation-date>10/22/2012 12:39:50</creation-date>
-          <change-date>12/13/2012 13:32:36</change-date>
+          <change-date>12/26/2012 18:55:28</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -108,10 +108,10 @@
             <owned-items />
             <style class="default" />
             <attributes>
-              <attribute id="a7d493d03694b40f580f257bc1010860d455" name="name" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="a7d493d03694b40f580f257bc1010860d455" name="name" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
-              <attribute id="a40f3e3ec746c400a8505abfbbeb380b9786" name="address" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="a40f3e3ec746c400a8505abfbbeb380b9786" name="address" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
             </attributes>
@@ -171,7 +171,7 @@
             <owned-items />
             <style class="default" />
             <attributes>
-              <attribute id="a90a5c3a284d744c8a401c802bd77c06188" name="event Query" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="a90a5c3a284d744c8a401c802bd77c06188" name="event Query" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
             </attributes>
@@ -185,6 +185,7 @@
               </operation>
               <operation id="oc031c5d4e67c4877975602d2f492179f237" name="Buy" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
                 <parameters>
+                  <parameter id="" name="User" type="" type-id="" default-value="" />
                   <parameter id="" name="Книги" type="" type-id="" default-value="" />
                 </parameters>
                 <stereotypes />
@@ -224,25 +225,25 @@
             <owned-items />
             <style class="default" />
             <attributes>
-              <attribute id="a9034661f48184e3c86e7b7449ed5866e311" name="login" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="a9034661f48184e3c86e7b7449ed5866e311" name="login" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
-              <attribute id="ab78af9e537f04e0ea414e39ede15667a931" name="password" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="ab78af9e537f04e0ea414e39ede15667a931" name="password" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
-              <attribute id="a84e60d75a048446f9b7bfa707ef2d644177" name="Имя" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="a84e60d75a048446f9b7bfa707ef2d644177" name="Имя" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
-              <attribute id="afd62b1cc02d04e0db1aae0b2fea1e3aa915" name="Фамилия" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="afd62b1cc02d04e0db1aae0b2fea1e3aa915" name="Фамилия" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
-              <attribute id="a43f717f4775a41878bf550b39b6ea4de736" name="Адрес" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="a43f717f4775a41878bf550b39b6ea4de736" name="Адрес" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
-              <attribute id="acbf202154aee4064bc5d59121ff3ae7b632" name="Статистика" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="acbf202154aee4064bc5d59121ff3ae7b632" name="Статистика" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
-              <attribute id="ab085ecf959c241358d400690f9d40723576" name="История покупок" type="" type-id="" visibility="private" abstract="false" virtual="false">
+              <attribute id="ab085ecf959c241358d400690f9d40723576" name="История покупок" type="" type-id="" visibility="public" abstract="false" virtual="false">
                 <stereotypes />
               </attribute>
             </attributes>
@@ -269,6 +270,21 @@
                 <stereotypes />
                 <source-codes />
               </operation>
+              <operation id="o1acb4dddbd4a44faa3b4fff80274f385767" name="Добавить к истории покупки" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o03519cd360ed4c0da98f8fe50c68c2d1847" name="Save" type="" type-id="" visibility="private" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o206ae3d63cc6483d98f231c8b45d961d781" name="Load" type="" type-id="" visibility="private" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
             </operations>
             <template-parameters>
               <source-codes />
@@ -285,6 +301,59 @@
               <end-role id="" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
+          <item id="ddip186987482976490055_410529075105776404" cid="C001" type="class" name="Система" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/26/2012 18:09:48">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes />
+            <operations />
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="ddip186987482976490055_845153506846065084" cid="REL001" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/26/2012 18:12:27">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip186987482976490055_410529075105776404" to="ddip186987482976490055_806335600685882809">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip186987482976490055_681262334281941688" cid="REL002" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/26/2012 18:12:49">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip186987482976490055_410529075105776404" to="ddip186987482976490055_123904740598452649">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="1" navigability="yes" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip186987482976490055_973138575362887601" cid="REL003" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/26/2012 18:13:08">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip186987482976490055_410529075105776404" to="ddip186987482976490055_867554201869054849">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="" navigability="yes" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip186987482976490055_101427986746920048" cid="CMT001" type="comment" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="12/26/2012 18:55:28">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <comment>Методы Save() и Load() вызываются самим классом в случае внесение изменений и при создании экземпляра класса</comment>
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
           <item id="ddip186987482976490055_166264863480462238" iid="ff4135c2c992435894c514e4e6e8bf26" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/22/2012 12:49:43" order-index="1" type="entity">
@@ -292,7 +361,7 @@
             <class />
           </item>
           <item id="ddip186987482976490055_181761439693998047" iid="2308b080ccca4450a1f307607cbcfa77" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/22/2012 12:52:00" order-index="2" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="586" y1="432" x2="583" y2="500" start-border-pos="0.616370500837054" end-border-pos="0.127859015213816">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="586" y1="432" x2="583" y2="500" start-border-pos="0.616370500837054" end-border-pos="0.127859115600586">
               <points>
                 <point x="586" y="432" />
                 <point x="583" y="500" />
@@ -316,7 +385,7 @@
             <role-positions start-role="25,15" end-role="24.99999,14.99999" start-multiplicity="25.95645,-14.7081" end-multiplicity="25,-14.99999" />
           </item>
           <item id="ddip186987482976490055_123904740598452649" iid="62ee7358d0d94e79aa35d2f435f7d4ef" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/22/2012 13:09:35" order-index="7" type="entity">
-            <layout ax="-72" ay="282" awidth="140" aheight="108" x="-72" y="282" width="0" height="108" angle="0" />
+            <layout ax="-72" ay="265" awidth="140" aheight="145" x="-72" y="265" width="0" height="145" angle="0" />
             <class />
           </item>
           <item id="ddip186987482976490055_568982075626314187" iid="cb951f4e30f64d10b686039e056076a5" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/22/2012 12:40:18" order-index="0" type="entity">
@@ -324,7 +393,7 @@
             <class />
           </item>
           <item id="ddip186987482976490055_118654962651365588" iid="7c719149b368432d8e380fd87882d4fd" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/01/2012 13:57:11" order-index="19" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="291" y1="506" x2="505" y2="531" start-border-pos="0.396452120035002" end-border-pos="0.848344612121582">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="291" y1="506" x2="505" y2="531" start-border-pos="0.396452120035002" end-border-pos="0.848344802856445">
               <points>
                 <point x="291" y="506" />
                 <point x="505" y="531" />
@@ -334,32 +403,69 @@
             <role-positions start-role="25,15" end-role="25,15" start-multiplicity="25.00003,-15.00001" end-multiplicity="25,-15" />
           </item>
           <item id="ddip186987482976490055_851124488238031175" iid="3bc45641fc6c40158e1b608035c9e755" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/01/2012 13:58:26" order-index="20" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="68" y1="387" x2="151" y2="447" start-border-pos="0.492713009869611" end-border-pos="0.75036628647606">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="68" y1="388" x2="151" y2="448" start-border-pos="0.462455539045663" end-border-pos="0.751920265726524">
               <points>
-                <point x="68" y="387" />
-                <point x="151" y="447" />
+                <point x="68" y="388" />
+                <point x="151" y="448" />
               </points>
             </layout>
             <relation from="ddip186987482976490055_123904740598452649" from-iid="62ee7358d0d94e79aa35d2f435f7d4ef" to="ddip186987482976490055_582253803171999678" to-iid="122052b701a24c1e971373f26cee19b0" />
             <role-positions start-role="25,15" end-role="24.99999,15.00002" start-multiplicity="25.00001,-14.99999" end-multiplicity="24.99996,-15.00002" />
           </item>
           <item id="ddip186987482976490055_867554201869054849" iid="0d8891d7021f48e78924417fda2da01f" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/13/2012 13:26:32" order-index="21" type="entity">
-            <layout ax="363" ay="45" awidth="140" aheight="160" x="363" y="45" width="0" height="0" angle="0" />
+            <layout ax="291" ay="77" awidth="140" aheight="228" x="291" y="77" width="0" height="228" angle="0" />
             <class />
           </item>
           <item id="ddip186987482976490055_806335600685882809" iid="58b5ff08ac4d4216bfea3702b1ad505a" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/13/2012 13:29:57" order-index="22" type="entity">
-            <layout ax="-92" ay="46" awidth="177" aheight="160" x="-92" y="46" width="177" height="0" angle="0" />
+            <layout ax="275" ay="-197" awidth="177" aheight="163" x="275" y="-197" width="177" height="163" angle="0" />
             <class />
           </item>
           <item id="ddip186987482976490055_808171039382196065" iid="804f0db93e6c46818ff904f3062e7910" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/13/2012 13:32:36" order-index="23" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="363" y1="125" x2="85" y2="126" start-border-pos="0.875250291824341" end-border-pos="0.374681782722473">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="362" y1="77" x2="363" y2="-34" start-border-pos="0.126989310128348" end-border-pos="0.624574434959282">
               <points>
-                <point x="363" y="125" />
-                <point x="85" y="126" />
+                <point x="362" y="77" />
+                <point x="363" y="-34" />
               </points>
             </layout>
             <relation from="ddip186987482976490055_867554201869054849" from-iid="0d8891d7021f48e78924417fda2da01f" to="ddip186987482976490055_806335600685882809" to-iid="58b5ff08ac4d4216bfea3702b1ad505a" />
             <role-positions start-role="25,15" end-role="25,15" start-multiplicity="25.00002,-15.00001" end-multiplicity="25,-15" />
+          </item>
+          <item id="ddip186987482976490055_410529075105776404" iid="f14ef509a220464784aaf9de3ba0a380" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/26/2012 18:09:48" order-index="24" type="entity">
+            <layout ax="-105" ay="-62" awidth="140" aheight="123" x="-105" y="-62" width="0" height="123" angle="0" />
+            <class />
+          </item>
+          <item id="ddip186987482976490055_845153506846065084" iid="6589b5a701144b7caec5b9092b499988" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/26/2012 18:12:27" order-index="25" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="35" y1="-20" x2="275" y2="-90" start-border-pos="0.334652687475933" end-border-pos="0.913918231893902">
+              <points>
+                <point x="35" y="-20" />
+                <point x="275" y="-90" />
+              </points>
+            </layout>
+            <relation from="ddip186987482976490055_410529075105776404" from-iid="f14ef509a220464784aaf9de3ba0a380" to="ddip186987482976490055_806335600685882809" to-iid="58b5ff08ac4d4216bfea3702b1ad505a" />
+            <role-positions start-role="25,15" end-role="25.00001,15" start-multiplicity="25,-15" end-multiplicity="25,-15" />
+          </item>
+          <item id="ddip186987482976490055_681262334281941688" iid="eeeae496229849f99fd3a4c915b0c58c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/26/2012 18:12:49" order-index="26" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="-29" y1="61" x2="-9" y2="265" start-border-pos="0.635635038784572" end-border-pos="0.112272822856903">
+              <points>
+                <point x="-29" y="61" />
+                <point x="-9" y="265" />
+              </points>
+            </layout>
+            <relation from="ddip186987482976490055_410529075105776404" from-iid="f14ef509a220464784aaf9de3ba0a380" to="ddip186987482976490055_123904740598452649" to-iid="62ee7358d0d94e79aa35d2f435f7d4ef" />
+            <role-positions start-role="25,15" end-role="25,15" start-multiplicity="25,-15" end-multiplicity="25.00001,-15" />
+          </item>
+          <item id="ddip186987482976490055_973138575362887601" iid="98d60c00852b4dc6bdd1e238aa917702" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/26/2012 18:13:08" order-index="27" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="35" y1="34" x2="291" y2="157" start-border-pos="0.444639485056807" end-border-pos="0.83797958440948">
+              <points>
+                <point x="35" y="34" />
+                <point x="291" y="157" />
+              </points>
+            </layout>
+            <relation from="ddip186987482976490055_410529075105776404" from-iid="f14ef509a220464784aaf9de3ba0a380" to="ddip186987482976490055_867554201869054849" to-iid="0d8891d7021f48e78924417fda2da01f" />
+            <role-positions start-role="25,15" end-role="25,15" start-multiplicity="25,-15" end-multiplicity="25,-15" />
+          </item>
+          <item id="ddip186987482976490055_101427986746920048" iid="093cfca60884414ab89ebca4d1d48a09" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="12/26/2012 18:55:28" order-index="28" type="entity">
+            <layout ax="466" ay="-43" awidth="140" aheight="199" x="466" y="-43" width="0" height="199" angle="0" />
           </item>
         </layer>
       </diagram>
