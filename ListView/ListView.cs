@@ -16,6 +16,9 @@ namespace ListView
         
         public Func<User, int[], int[], bool> BuyLambda;
 
+        public List<int> BuyIndexes;
+        public List<int> BuyCount;
+
         public ListView()
         {
             InitializeComponent();         
@@ -48,7 +51,12 @@ namespace ListView
                         newPurchasedBook.SubItems.Add(selectedBook.SubItems[2]);
                         newPurchasedBook.SubItems.Add(selectedBook.SubItems[3]);
                         newPurchasedBook.SubItems.Add(d.numericUpDown1.Value.ToString());
+                        newPurchasedBook.SubItems.Add(selectedBook.SubItems[5]);
+
                         purchaseBookList.Items.Add(newPurchasedBook);
+
+                        BuyIndexes.Add(int.Parse(newPurchasedBook.SubItems[5].Text.ToString()));
+                        BuyCount.Add(int.Parse(newPurchasedBook.SubItems[4].Text.ToString()));
                     }
                     if (d.numericUpDown1.Value == count)
                     {
@@ -98,10 +106,16 @@ namespace ListView
                     if (d.numericUpDown1.Value == count)
                     {
                         purchaseBookList.Items.Remove(selectedBook);
+                        BuyIndexes.Remove(int.Parse(selectedBook.SubItems[5].Text.ToString()));
+                        BuyCount.Remove(int.Parse(selectedBook.SubItems[4].Text));
                     }
                     else
                     {
                         selectedBook.SubItems[4].Text = (count - d.numericUpDown1.Value).ToString();
+                        for (int i = 0; i < BuyIndexes.Count; i++)
+                        {
+                            if (BuyIndexes[i] == int.Parse(selectedBook.SubItems[5].Text.ToString())) BuyCount[i] = (int)(count - d.numericUpDown1.Value);
+                        }
                     }
 
 
@@ -127,24 +141,29 @@ namespace ListView
 
         public void SetBookList(object sender, QueryEventArgs e)
         {
+            BuyIndexes = new List<int>();
+            BuyCount = new List<int>();
+
             Book[] books = e.Answer;
             queryBookList.Items.Clear();
             //purchaseBookList.Items.Clear();
-            foreach (Book book in books)
+            for (int i = 0; i < e.Answer.Length; i++)
             {
+                Book book = e.Answer[i];
                 ListViewItem newBook = new ListViewItem(book.title);
                 newBook.SubItems.Add(book.author);
                 newBook.SubItems.Add(book.from.address);
                 newBook.SubItems.Add(book.from.name);
                 newBook.SubItems.Add(book.copies.ToString());
-                
+                newBook.SubItems.Add(e.Indexes[i].ToString()); //  
+
                 queryBookList.Items.Add(newBook);
             }
         }
 
         private void BuyButton_Click(object sender, EventArgs e)
         {
-            //BuyLambda()
+           // if (BuyIndexes.Count != 0) BuyLambda(BuyIndexes, BuyCount);
         }
 
 
